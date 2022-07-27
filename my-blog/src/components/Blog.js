@@ -10,6 +10,8 @@ import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 // import Main from './Main';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import France, {Banner} from "../pages/France";
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 // import post1 from './blog-post.1.md';
@@ -29,6 +31,35 @@ const sections = [
   { title: 'United Kindgom', url: '#' },
 ];
 
+
+const Spain = () => {
+  return <div>
+    <h1>Spain</h1>
+  </div>
+}
+
+const App = () => {
+  return (
+    <Router>
+  <div>
+    <Link to="/">France</Link>
+
+    <Link to="/">Spain</Link>
+ </div>
+  
+  <Switch>
+    <Route path="/" exact>
+      <France />
+    </Route>
+
+    <Route path="/Spain" exact>
+      <France />
+    </Route>
+  </Switch>
+  </Router>
+  )
+}
+
 const mainFeaturedPost = {
   title: "What's the best country to travel to? ",
   description:
@@ -44,7 +75,7 @@ const featuredPosts = [
     date: 'May 5, 2022',
     description:
       'France is the most popular country because its well organized to receive guests. They have excellent roads and transportation like trains, roads and aircrafts, and France is well-positioned to receive guests from all over the world,”- Annabeth Chase, San Franciso, California.',
-    image: 'https://source.unsplash.com/random',
+    image: 'https://unsplash.com/photos/CB0Qrf8ib4I',
     imageLabel: 'Image Text',
   },
   {
