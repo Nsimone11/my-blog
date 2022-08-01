@@ -9,59 +9,24 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
-// import Main from './Main';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import France, {Banner} from "../pages/France";
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-// import post1 from './blog-post.1.md';
-// import post2 from './blog-post.2.md';
-// import post3 from './blog-post.3.md';
 
 const sections = [
-  { title: 'France', url: '#' },
-  { title: 'Spain', url: '#' },
+  { title: 'France', url: 'France' },
+  { title: 'Spain', url: 'Spain' },
   { title: 'United States', url: '#' },
-  { title: 'China', url: '#' },
-  { title: 'Italy', url: '#' },
-  { title: 'Turkey', url: '#' },
-  { title: 'Mexico', url: '#' },
-  { title: 'Thailand', url: '#' },
-  { title: 'Germany', url: '#' },
-  { title: 'United Kindgom', url: '#' },
+  { title: 'China', url: 'China' },
+  { title: 'Italy', url: 'Italy' },
+  { title: 'Turkey', url: 'Turkey' },
+  { title: 'Mexico', url: 'Mexico' },
+  { title: 'Thailand', url: 'Thailand' },
+  { title: 'Germany', url: 'Germany' },
+  { title: 'United Kindgom', url: 'United Kingdom' },
 ];
 
-
-const Spain = () => {
-  return <div>
-    <h1>Spain</h1>
-  </div>
-}
-
-const App = () => {
-  return (
-    <Router>
-  <div>
-    <Link to="/">France</Link>
-
-    <Link to="/">Spain</Link>
- </div>
-  
-  <Switch>
-    <Route path="/" exact>
-      <France />
-    </Route>
-
-    <Route path="/Spain" exact>
-      <France />
-    </Route>
-  </Switch>
-  </Router>
-  )
-}
-
 const mainFeaturedPost = {
-  title: "What's the best country to travel to? ",
+  title: "What countries are on your travel list? ",
   description:
     "Join other tourists in the great debate: Is your country the best place to travel to? ",
   image: 'https://source.unsplash.com/random',
@@ -75,7 +40,7 @@ const featuredPosts = [
     date: 'May 5, 2022',
     description:
       'France is the most popular country because its well organized to receive guests. They have excellent roads and transportation like trains, roads and aircrafts, and France is well-positioned to receive guests from all over the world,”- Annabeth Chase, San Franciso, California.',
-    image: 'https://unsplash.com/photos/CB0Qrf8ib4I',
+    image: 'https://source.unsplash.com/random',
     imageLabel: 'Image Text',
   },
   {
