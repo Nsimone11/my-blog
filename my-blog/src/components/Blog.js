@@ -15,14 +15,14 @@ import Footer from './Footer';
 const sections = [
   { title: 'France', url: 'France' },
   { title: 'Spain', url: 'Spain' },
-  { title: 'United States', url: '#' },
+  { title: 'United States', url: 'UnitedStates' },
   { title: 'China', url: 'China' },
   { title: 'Italy', url: 'Italy' },
   { title: 'Turkey', url: 'Turkey' },
   { title: 'Mexico', url: 'Mexico' },
   { title: 'Thailand', url: 'Thailand' },
   { title: 'Germany', url: 'Germany' },
-  { title: 'United Kindgom', url: 'United Kingdom' },
+  { title: 'United Kindgom', url: 'UnitedKingdom' },
 ];
 
 const mainFeaturedPost = {
